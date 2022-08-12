@@ -1,0 +1,185 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.0.0/dist/mindar-image.prod.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.0.0/dist/mindar-image-aframe.prod.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    
+  </head>
+
+  <body>
+    <a-scene mindar-image="imageTargetSrc: ./targets1.mind;" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights">
+      <a-assets>
+         
+        
+        <video src="./Planet.mp4"
+        preload="auto" id="vid" response-type="arraybuffer" loop
+        crossorigin webkit-playsinline autoplay="false" playsinline>
+    </video> 
+        <img id="mail" src="./mail.png" crossorigin="anonymous">
+        <img id="phone" src="./phone.png" crossorigin="anonymous">
+        <img id="wa" src="./wa.png" crossorigin="anonymous">
+        <img id="play" src="./playnew.png" crossorigin="anonymous">
+        <img id="photo" src="./photo.png" crossorigin="anonymous">
+        <img id="linkedin" src="./linkedin.png" crossorigin="anonymous">
+        <img id="name1" src="./name1.png" crossorigin="anonymous">
+        <img id="web1" src="./btn2blue.png" crossorigin="anonymous">
+        <img id="linkedin1" src="./btn1blue.png" crossorigin="anonymous">
+        <img id="youtube" src="./youtube.png" crossorigin="anonymous">
+
+        
+            
+      </a-assets>
+      <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: 10000; objects: .clickable"></a-camera>
+
+      <a-entity id="example-target-0" mindar-image-target="targetIndex: 0">
+        <a-video id="example-plane-0" class="clickable" src="#vid" position='0 -0.6 0' rotation='0 0 0' width='1px' height='0.5px'>
+        </a-video>
+      <!-- <a-entity id="playbtn" class="clickable" geometry="primitive: plane; height: 0.2; width: 0.2;" position="0 -0.7 0.1" rotation="0 0 0" material="src: #play; opacity: 1; transparent: true;"></a-entity>  -->
+      
+<a-entity id="mailbtn" class="clickable" geometry="primitive: plane; height: 0.2; width: 0.2;" position="0. -1.1 0" rotation="0 0 0" material="src: #mail; opacity: 1; transparent: true;"></a-entity> 
+<a-entity id="phonebtn" class="clickable" geometry="primitive: plane; height: 0.2; width: 0.2;" position="0.4 -1.1 0" rotation="0 0 0" material="src: #phone; opacity: 1; transparent: true;"></a-entity> 
+<a-entity id="wabtn" class="clickable" geometry="primitive: plane; height: 0.2; width: 0.2;" position="-0.4 -1.1 0" rotation="0 0 0" material="src: #wa; opacity: 1; transparent: true;"></a-entity> 
+<a-entity id="photobtn" class="clickable" geometry="primitive: plane; height: 0.3; width:0.3;" position="0.65 0 0" rotation="0 0 0" material="src: #photo; opacity: 1; transparent: true;"></a-entity> 
+<a-entity id="linkedinbtn" class="clickable" geometry="primitive: plane; height: 0.2; width: 0.2;" position="0.8 -1.1 0" rotation="0 0 0" material="src: #linkedin; opacity: 1; transparent: true;"></a-entity>
+<a-entity id="name1btn" class="clickable" geometry="primitive: plane; height:0.3; width: 0.57;" position="1.12 0 0" rotation="0 0 0" material="src: #name1; opacity: 1; transparent: true;"></a-entity> 
+<a-entity id="web1btn" class="clickable" geometry="primitive: plane; height: 0.2; width: 0.5;" position="0.9 -0.5 0" rotation="0 0 0" material="src: #web1; opacity: 1; transparent: true;"></a-entity> 
+<a-entity id="linkedin1btn" class="clickable" geometry="primitive: plane; height: 0.2; width: 0.5;" position="0.9 -0.8 0" rotation="0 0 0" material="src: #linkedin1; opacity: 1; transparent: true;"></a-entity> 
+<a-entity id="youtubebtn" class="clickable" geometry="primitive: plane; height: 0.3; width: 0.3;" position="1.2 -1.1 0" rotation="0 0 0" material="src: #youtube; opacity: 1; transparent: true;"></a-entity> 
+
+      </a-entity> 
+<!-- index 1 starts from here -->
+
+
+<a-entity id="example-target-1" mindar-image-target="targetIndex: 1">
+  <a-video id="example-plane-1" class="clickable" src="#vid" position='0 -0.6 0' rotation='0 0 0' width='1px' height='0.5px'>
+  </a-video>
+<!-- <a-entity id="playbtn" class="clickable" geometry="primitive: plane; height: 0.2; width: 0.2;" position="0 -0.7 0.1" rotation="0 0 0" material="src: #play; opacity: 1; transparent: true;"></a-entity>  -->
+
+<a-entity id="mailbtn1" class="clickable" geometry="primitive: plane; height: 0.2; width: 0.2;" position="0 -1.1 0" rotation="0 0 0" material="src: #mail; opacity: 1; transparent: true;"></a-entity> 
+<a-entity id="phonebtn1" class="clickable" geometry="primitive: plane; height: 0.2; width: 0.2;" position="0.4 -1.1 0" rotation="0 0 0" material="src: #phone; opacity: 1; transparent: true;"></a-entity> 
+<a-entity id="wabtn1" class="clickable" geometry="primitive: plane; height: 0.2; width: 0.2;" position="-0.4 -1.1 0" rotation="0 0 0" material="src: #wa; opacity: 1; transparent: true;"></a-entity> 
+<a-entity id="photobtn1" class="clickable" geometry="primitive: plane; height: 0.3; width:0.3;" position="0.65 0 0" rotation="0 0 0" material="src: #photo; opacity: 1; transparent: true;"></a-entity> 
+<a-entity id="linkedinbtn1" class="clickable" geometry="primitive: plane; height: 0.2; width: 0.2;" position="0.8 -1.1 0" rotation="0 0 0" material="src: #linkedin; opacity: 1; transparent: true;"></a-entity>
+<a-entity id="name1btn1" class="clickable" geometry="primitive: plane; height:0.3; width: 0.57;" position="1.12 0 0" rotation="0 0 0" material="src: #name1; opacity: 1; transparent: true;"></a-entity> 
+<a-entity id="web1btn1" class="clickable" geometry="primitive: plane; height: 0.6; width: 0.6;" position="0.9 -0.5 0" rotation="0 0 0" material="src: #web1; opacity: 1; transparent: true;"></a-entity> 
+<a-entity id="linkedin1btn1" class="clickable" geometry="primitive: plane; height: 0.2; width: 0.5;" position="0.9 -0.8 0" rotation="0 0 0" material="src: #linkedin1; opacity: 1; transparent: true;"></a-entity> 
+<a-entity id="youtubebtn1" class="clickable" geometry="primitive: plane; height: 0.3; width: 0.3;" position="1.2 -1.1 0" rotation="0 0 0" material="src: #youtube; opacity: 1; transparent: true;"></a-entity> 
+
+</a-entity> 
+
+    </a-scene>
+
+    <script type="text/javascript">
+     
+      const exampleTarget = document.querySelector('#example-target-0');
+      exampleTarget.addEventListener("targetFound", event => {
+        console.log("target found");
+        document.querySelector("#vid").play();
+
+      });
+
+      // detect target lost
+      exampleTarget.addEventListener("targetLost", event => {
+        console.log("target lost");
+      })
+
+//--------------------------------------------------------------------------------------------------------
+
+      const exampleTarget1 = document.querySelector('#example-target-1');
+      exampleTarget1.addEventListener("targetFound", event => {
+        console.log("target found");
+        document.querySelector("#vid").play();
+
+      });
+
+      // detect target lost
+      exampleTarget.addEventListener("targetLost", event => {
+        console.log("target lost");
+      });
+
+      // const examplePlane = document.querySelector('#playbtn');
+      //  examplePlane.addEventListener("click", event => {
+      //   document.querySelector("#vid").play();
+      //   examplePlane.remove();
+      //  });
+
+        const mailBtn = document.querySelector('#mailbtn');
+       mailBtn.addEventListener("click", event => {
+       window.location.href = "mailto:Gal@oversight-ar.com";
+       });
+      
+       const phoneBtn = document.querySelector('#phonebtn');
+       phoneBtn.addEventListener("click", event => {
+       window.location.href = "tel:+972-526844027";
+       });
+
+       const waBtn = document.querySelector('#wabtn');
+       waBtn.addEventListener("click", event => {
+       window.location.href = "https://wa.me/526844027";
+       });
+
+       const linkedinBtn = document.querySelector('#linkedinbtn');
+       linkedinBtn.addEventListener("click", event => {
+       window.location.href = "https://www.linkedin.com/in/gal-dalali-0a34ab9a/";
+       });
+
+       const web1Btn = document.querySelector('#web1btn');
+       web1Btn.addEventListener("click", event => {
+       window.location.href = "https://oversight-ar.com/";
+       });
+
+
+       const linkedin1Btn = document.querySelector('#linkedin1btn');
+       linkedin1Btn.addEventListener("click", event => {
+       window.location.href = "https://www.linkedin.com/company/oversight-ar/";
+       });
+
+       const youtubeBtn = document.querySelector('#youtubebtn');
+       youtubeBtn.addEventListener("click", event => {
+       window.location.href = "https://www.youtube.com/channel/UCJTWin6B86RKPGNHgBSwfow";
+       });
+
+//---------------------------------------------------------------------
+
+const mailBtn1 = document.querySelector('#mailbtn1');
+       mailBtn1.addEventListener("click", event => {
+       window.location.href = "mailto:Gal@oversight-ar.com";
+       });
+      
+       const phoneBtn1 = document.querySelector('#phonebtn1');
+       phoneBtn1.addEventListener("click", event => {
+       window.location.href = "tel:+972-526844027";
+       });
+
+       const waBtn1 = document.querySelector('#wabtn1');
+       waBtn1.addEventListener("click", event => {
+       window.location.href = "https://wa.me/526844027";
+       });
+
+       const linkedinBtn1 = document.querySelector('#linkedinbtn1');
+       linkedinBtn1.addEventListener("click", event => {
+       window.location.href = "https://www.linkedin.com/in/gal-dalali-0a34ab9a/";
+       });
+
+       const web1Btn1 = document.querySelector('#web1btn1');
+       web1Btn1.addEventListener("click", event => {
+       window.location.href = "https://oversight-ar.com/";
+       });
+
+
+       const linkedin1Btn1 = document.querySelector('#linkedin1btn1');
+       linkedin1Btn1.addEventListener("click", event => {
+       window.location.href = "https://www.linkedin.com/company/oversight-ar/";
+       });
+
+       const youtubeBtn1 = document.querySelector('#youtubebtn1');
+       youtubeBtn1.addEventListener("click", event => {
+       window.location.href = "https://www.youtube.com/channel/UCJTWin6B86RKPGNHgBSwfow";
+       });
+
+
+    </script>
+  </body>
+</html>
